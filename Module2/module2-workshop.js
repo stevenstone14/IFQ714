@@ -18,6 +18,7 @@ function SaleFormat() {
 let newSaleItem = new Sale(1, "Wi-Fi Adapter", 40.00, "03-09-2022")
 let newEmployee = new Employee(2, "Mary", "Sue", "Female", 32, "Salesperson");
 
+//check toString method is working on custom objects
 console.log(newSaleItem.toString());
 console.log(newEmployee.toString());
 
@@ -43,6 +44,7 @@ function Sale(staffId, item, price, date){
     }
 };
 
+//convert the date string in sales object and get that date's day of the week
 function GetDayOfTheWeek(d) {
     const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     const dateDay = d.slice(3,5), dateMonth = d.slice(0,2), dateYear = d.slice(6,10);
