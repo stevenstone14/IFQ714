@@ -3,8 +3,8 @@ let employee = JSON.parse('{"id":1,"firstName":"John", "lastName":"Smith", "gend
 let sale = JSON.parse('{"staffId":1, "item":"Wi-Fi Adapter", "price":40.00, "date":"01-09-2022"}');
 
 //Step 2: Create functions that output a formatted version of the information for the employee and sale. 
-console.log(EmployeeFormat());
-console.log(SaleFormat());
+console.log("\n" + EmployeeFormat());
+console.log(SaleFormat()+ "\n");
 
 function EmployeeFormat() {
     return `id: ${employee.id}, name: ${employee.firstName} ${employee.lastName}, gender: ${employee.gender}, age: ${employee.age}, position: ${employee.position}`;
